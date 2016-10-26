@@ -9,7 +9,7 @@ module.exports = {
     loaders: [
       {
         include: [
-          path.resolve(__dirname, src),
+          path.resolve(__dirname, "src"),
         ],
         test: /\.js$/,
         exclude: /node_modules/,
