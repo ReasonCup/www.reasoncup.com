@@ -26,12 +26,11 @@ let nav () =>
   <div className="nav">
     <div className="nav-items content">
       <div className="nav-item"> "ReasonCup 2016" </div>
+      <div className="nav-item"> "About" </div>
       <div className="nav-item"> "Rules" </div>
       <div className="nav-item"> "Judges" </div>
       <div className="nav-item"> "Prizes" </div>
-      <div className="nav-item"> "Getting Started" </div>
-      <div className="nav-item"> "About" </div>
-      <div className="nav-item"> "Register" </div>
+      <div className="nav-item"> "Sign up" </div>
     </div>
   </div>;
 
@@ -67,21 +66,21 @@ let epilog () =>
 
 let segment_rules () =>
   <div className="segment">
-    <div className="segment_rules">
-      <p className="segment_rules"> "Event Rules" </p>
-      <p className="segment_rules">
+    <div className="segment-rules">
+      <p className="segment-rules"> "Event Rules" </p>
+      <p className="segment-rules">
         "ReasonCup is about creating fun and useful projects and pushing the tooling in Reasonml to grow. We're pretty relaxed about what that actually looks as long as you follow some general guidelines:"
       </p>
       <ul>
-        <li className="segment_rules">
+        <li className="segment-rules">
           "Your apps/entries should be built primarily using Reason (though you may also use the OCaml syntax if you would like). Where it runs doesn't matter though, so we encourage you to use "
           <a href=""> "bucklescript" </a>
           " if you'd like to target the browser or node.js runtimes"
         </li>
-        <li className="segment_rules">
+        <li className="segment-rules">
           "While the bulk of your code should be in Reason, you can use any non-Reason dependency (C/JS/Unix/etc.) as necessary."
         </li>
-        <li className="segment_rules">
+        <li className="segment-rules">
           "Entries should run on one of the supported platforms: ARM/Node.js/Browser/Unix/Xen/iOS/rasperry pi/etc.*"
         </li>
       </ul>
@@ -94,69 +93,69 @@ let segment_rules () =>
 
 let segment_judges () =>
   <div className="segment">
-    <div className="segment_judges">
-      <p className="segment_judges">
-        "We've made sure to bring in some great segment_judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
+    <div className="segment-judges">
+      <p className="segment-judges">
+        "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
       </p>
-      <p className="segment_judges"> "Me" </p>
-      <p className="segment_judges"> "You" </p>
-      <p className="segment_judges"> "Her" </p>
-      <p className="segment_judges"> "Him" </p>
-      <p className="segment_judges"> "It" </p>
-      <p className="segment_judges"> "Us" </p>
-      <p className="segment_judges"> "Vous" </p>
-      <p className="segment_judges"> "They" </p>
+      <p className="segment-judges"> "Me" </p>
+      <p className="segment-judges"> "You" </p>
+      <p className="segment-judges"> "Her" </p>
+      <p className="segment-judges"> "Him" </p>
+      <p className="segment-judges"> "It" </p>
+      <p className="segment-judges"> "Us" </p>
+      <p className="segment-judges"> "Vous" </p>
+      <p className="segment-judges"> "They" </p>
       <br />
-      <p className="segment_judges"> "Criteria" </p>
+      <p className="segment-judges"> "Criteria" </p>
       <ul>
-        <li className="segment_judges">
+        <li className="segment-judges">
           "Here are some specific judging criteria so you know what to build towards:"
         </li>
-        <li className="segment_judges"> "Neat stuff." </li>
+        <li className="segment-judges"> "Neat stuff." </li>
       </ul>
     </div>
   </div>;
 
 let segment_prizes () =>
   <div className="segment">
-    <div className="segment_prizes">
-      <p className="segment_prizes"> "Top fashion item of the season: Reason 2016 hoodie" </p>
-      <p className="segment_prizes">
+    <div className="segment-prizes">
+      <p className="segment-prizes"> "Top fashion item of the season: Reason 2016 hoodie" </p>
+      <p className="segment-prizes">
         "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
       </p>
-      <p className="segment_prizes">
+      <p className="segment-prizes">
         "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
       </p>
-      <p className="segment_prizes">
+      <p className="segment-prizes">
         "12 months hosting for your project on major hosting providers"
       </p>
       <br />
-      <p className="segment_prizes"> "Sponsors:" </p>
-      <p className="segment_prizes"> "Me" </p>
-      <p className="segment_prizes"> "You" </p>
+      <p className="segment-prizes"> "Sponsors:" </p>
+      <p className="segment-prizes"> "Me" </p>
+      <p className="segment-prizes"> "You" </p>
     </div>
   </div>;
 
 let segment_about () =>
   <div className="segment">
-    <div className="segment_about">
-      <p className="segment_about">
+    <div className="segment-about">
+      <p className="segment-about">
         "ReasonCup is brought to you by your fellow reasoners, the "
         <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
       </p>
-      <p className="segment_about">
+      <p className="segment-about">
         "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
       </p>
-      <p className="segment_about">
+      <p className="segment-about">
         "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
       </p>
-      <p className="segment_about">
+      <p className="segment-about">
         "12 months hosting for your project on major hosting providers"
       </p>
       <br />
-      <p className="segment_about"> "Sponsors:" </p>
-      <p className="segment_about"> "Me" </p>
-      <p className="segment_about"> "You" </p>
+      <p className="segment-about"> "Sponsors:" </p>
+      <p className="segment-about"> "Me" </p>
+      <p className="segment-about"> "You" </p>
     </div>
   </div>;
 
