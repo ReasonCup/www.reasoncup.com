@@ -6,4 +6,5 @@ _build/
 *.cm*
 *.css
 *.js
+!*.config.js
 !jsFile1.js
