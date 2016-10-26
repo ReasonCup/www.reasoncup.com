@@ -2,7 +2,6 @@
  * vim: set ft=rust:
  * vim: set ft=reason:
  */
-
 /* EXPERIMENT thin wrapper around createClass, not the ML way of life */
 type intervalId;
 
@@ -26,10 +25,13 @@ let module ReactRe = React;
 let nav () =>
   <div className="nav">
     <div className="nav-items content">
-      <div className="nav-item"> "ReasonCup" </div>
-      <div className="nav-item"> "Item" </div>
-      <div className="nav-item"> "Thing" </div>
-      <div className="nav-item"> "Stuff" </div>
+      <div className="nav-item"> "ReasonCup 2016" </div>
+      <div className="nav-item"> "Rules" </div>
+      <div className="nav-item"> "Judges" </div>
+      <div className="nav-item"> "Prizes" </div>
+      <div className="nav-item"> "Getting Started" </div>
+      <div className="nav-item"> "About" </div>
+      <div className="nav-item"> "Register" </div>
     </div>
   </div>;
 
@@ -38,8 +40,12 @@ let prolog () =>
     (nav ())
     <section className="content">
       <article>
-        <h1> "ReasonCup" </h1>
-        <p> "A distributed 48-hour programming event for OCaml and ReasonML programmers. Teams of four build web apps that are fun, useful, or just quirky. Entries will be judged are judged by developers in the Recaml community and prizes doled out accordingly." </p>
+        <h1> "Reasoners: Join us for ReasonCup!" </h1>
+        <p>
+          "ReasonCup is a free distributed 48-hour programming event for "
+          <a href="https://facebook.github.io/reason/"> "Reasonml" </a>
+          " programmers. Teams of up to four build web apps that are useful, fun, or just quirky. Entries will be reviewed by developers in the Reason community with prizes given away at the end!"
+        </p>
         <button> "test" </button>
       </article>
     </section>
@@ -51,35 +57,106 @@ let epilog () =>
     <div className="continue"> "v" </div>
     <section className="content">
       <div className="hero-item">
-        <h1> "title" </h1>
-        <p> "lorem ipsum" </p>
-        <button> "test" </button>
+        <h1> "Reason will prevail!" </h1>
+        <p> "Let's use Reason to build something great" </p>
+        <button> "Join us for ReasonCup 2016" </button>
       </div>
     </section>
     (nav ())
   </div>;
 
-let segment1 () =>
+let segment_rules () =>
   <div className="segment">
-    <div className="segment1">
-      <p className="segment1"> "segment1" </p>
-      <p className="segment1"> "segment1" </p>
+    <div className="segment_rules">
+      <p className="segment_rules"> "Event Rules" </p>
+      <p className="segment_rules">
+        "ReasonCup is about creating fun and useful projects and pushing the tooling in Reasonml to grow. We're pretty relaxed about what that actually looks as long as you follow some general guidelines:"
+      </p>
+      <ul>
+        <li className="segment_rules">
+          "Your apps/entries should be built primarily using Reason (though you may also use the OCaml syntax if you would like). Where it runs doesn't matter though, so we encourage you to use "
+          <a href=""> "bucklescript" </a>
+          " if you'd like to target the browser or node.js runtimes"
+        </li>
+        <li className="segment_rules">
+          "While the bulk of your code should be in Reason, you can use any non-Reason dependency (C/JS/Unix/etc.) as necessary."
+        </li>
+        <li className="segment_rules">
+          "Entries should run on one of the supported platforms: ARM/Node.js/Browser/Unix/Xen/iOS/rasperry pi/etc.*"
+        </li>
+      </ul>
+      <p>
+        "* Your entry may be a web app, a library, some utility, or anything you think would be fun."
+        "It's probably best if your entry is somehow usable via the browser, as that's the easiest for judges and the general public to evaluate entries, and avoids complicated setups that may not work when trying to run an entry locally.\n\nIf your entry is not a website however, then be sure to publish it to NPM where we can examine it easily locally."
+      </p>
     </div>
   </div>;
 
-let segment2 () =>
+let segment_judges () =>
   <div className="segment">
-    <div className="segment2">
-      <p className="segment2"> "segment2" </p>
-      <p className="segment2"> "segment2" </p>
+    <div className="segment_judges">
+      <p className="segment_judges">
+        "We've made sure to bring in some great segment_judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
+      </p>
+      <p className="segment_judges"> "Me" </p>
+      <p className="segment_judges"> "You" </p>
+      <p className="segment_judges"> "Her" </p>
+      <p className="segment_judges"> "Him" </p>
+      <p className="segment_judges"> "It" </p>
+      <p className="segment_judges"> "Us" </p>
+      <p className="segment_judges"> "Vous" </p>
+      <p className="segment_judges"> "They" </p>
+      <br />
+      <p className="segment_judges"> "Criteria" </p>
+      <ul>
+        <li className="segment_judges">
+          "Here are some specific judging criteria so you know what to build towards:"
+        </li>
+        <li className="segment_judges"> "Neat stuff." </li>
+      </ul>
     </div>
   </div>;
 
-let segment3 () =>
+let segment_prizes () =>
   <div className="segment">
-    <div className="segment3">
-      <p className="segment3"> "segment3" </p>
-      <p className="segment3"> "segment3" </p>
+    <div className="segment_prizes">
+      <p className="segment_prizes"> "Top fashion item of the season: Reason 2016 hoodie" </p>
+      <p className="segment_prizes">
+        "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
+      </p>
+      <p className="segment_prizes">
+        "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
+      </p>
+      <p className="segment_prizes">
+        "12 months hosting for your project on major hosting providers"
+      </p>
+      <br />
+      <p className="segment_prizes"> "Sponsors:" </p>
+      <p className="segment_prizes"> "Me" </p>
+      <p className="segment_prizes"> "You" </p>
+    </div>
+  </div>;
+
+let segment_about () =>
+  <div className="segment">
+    <div className="segment_about">
+      <p className="segment_about">
+        "ReasonCup is brought to you by your fellow reasoners, the "
+        <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
+      </p>
+      <p className="segment_about">
+        "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
+      </p>
+      <p className="segment_about">
+        "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
+      </p>
+      <p className="segment_about">
+        "12 months hosting for your project on major hosting providers"
+      </p>
+      <br />
+      <p className="segment_about"> "Sponsors:" </p>
+      <p className="segment_about"> "Me" </p>
+      <p className="segment_about"> "You" </p>
     </div>
   </div>;
 
@@ -90,9 +167,9 @@ let comp = React.createClass (
     method render () =>
       <div className="page">
         (prolog ())
-        (segment1 ())
-        (segment2 ())
-        (segment3 ())
+        (segment_rules ())
+        (segment_judges ())
+        (segment_prizes ())
         (epilog ())
       </div>
   }
