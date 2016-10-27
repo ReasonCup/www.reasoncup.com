@@ -116,9 +116,18 @@ let segment_judges () =>
           className="judge-img"
           src="https://pbs.twimg.com/profile_images/690179176351924224/SBRuzEWj_400x400.jpg"
         />
-        <h3> "Anil Madhavapeddy" </h3>
+        <h3> <a href="https://twitter.com/avsm"> "Anil Madhavapeddy" </a> </h3>
         <p className="segment-judges">
           "Engineering at Docker, faculty at Cambridge Computer Lab, fellow Pembroke College, author Real World OCaml, unikernel hacker, and just a generally swell fellow!"
+        </p>
+        <hr />
+        <img
+          className="judge-img"
+          src="https://pbs.twimg.com/profile_images/557953374419562496/ofvO23ag_400x400.jpeg"
+        />
+        <h3> <a href="https://twitter.com/kc_srk"> "KC Sivaramakrishnan" </a> </h3>
+        <p className="segment-judges">
+          "KC is the uniquely capable and thoughtful force behind so many of the most exciting features coming to the Reason language, including Algebraic effects and multicore"
         </p>
         <hr />
         <img className="judge-img" src="http://placehold.it/128x128" />
@@ -166,6 +175,9 @@ let segment_about () =>
       <p className="segment-about">
         "ReasonCup is brought to you by your fellow reasoners, the "
         <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
+      </p>
+      <p className="segment-about">
+        "Reason mug - start your day with a healthy dose of Reason with this styl"
       </p>
       <p className="segment-about">
         "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
