@@ -55,7 +55,7 @@ let epilog () =>
     <div className="continue"> "v" </div>
     <section className="content">
       <div className="hero-item">
-        <h1> "Reason will prevail!" </h1>
+        <h1> "Finally, the Reason for Ocaml." </h1>
         <p> "Let's use Reason to build something great" </p>
         <button> "Join us for ReasonCup 2016" </button>
       </div>
@@ -68,23 +68,29 @@ let segment_rules () =>
     <section className="content">
       <article>
         <h1 className="segment-rules"> "Event Rules" </h1>
+        <hr />
+        <h3> "Have fun" </h3>
         <p className="segment-rules">
           "ReasonCup is about creating fun and useful projects and pushing the tooling in Reasonml to grow. We're pretty relaxed about what that actually looks as long as you follow some general guidelines:"
         </p>
+        <hr />
         <h3> "Use Reason" </h3>
         <p className="segment-rules">
           "Your apps/entries should be built primarily using Reason (though you may also use the OCaml syntax if you would like). Where it runs doesn't matter though, so we encourage you to use "
           <a href=""> "Bucklescript" </a>
           " if you'd like to target the browser or node.js runtimes"
         </p>
+        <hr />
         <h3> "Dependencies" </h3>
         <p className="segment-rules">
           "While the bulk of your code should be in Reason, you can use any non-Reason dependency (C/JS/Unix/etc.) as necessary."
         </p>
+        <hr />
         <h3> "Supported platforms" </h3>
         <p className="segment-rules">
           "Entries should run on one of these platforms: ARM, Node.js, Web, Unix, Xen, iOS, Rasperry Pi. Your entry may also be a library, some utility, or anything you think would be fun."
         </p>
+        <hr />
         <h3> "Accessibility" </h3>
         <p>
           "It's probably best if your entry is somehow usable via the browser, as that's the easiest for judges and the general public to evaluate entries, and avoids complicated setups that may not work when trying to run an entry locally.\n\nIf your entry is not a website however, then be sure to publish it to NPM where we can examine it easily locally."
@@ -120,22 +126,35 @@ let segment_judges () =>
 
 let segment_prizes () =>
   <div className="segment">
-    <div className="segment-prizes">
-      <p className="segment-prizes"> "Top fashion item of the season: Reason 2016 hoodie" </p>
-      <p className="segment-prizes">
-        "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
-      </p>
-      <p className="segment-prizes">
-        "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
-      </p>
-      <p className="segment-prizes">
-        "12 months hosting for your project on major hosting providers"
-      </p>
-      <br />
-      <p className="segment-prizes"> "Sponsors:" </p>
-      <p className="segment-prizes"> "Me" </p>
-      <p className="segment-prizes"> "You" </p>
-    </div>
+    <section className="content">
+      <article>
+        <h1 className="segment-prizes"> "Prizes" </h1>
+        <hr />
+        <h3 className="segment-prizes"> "Hoody" </h3>
+        <p className="segment-prizes">
+          "On of the top fashion item of the season. "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <h3 className="segment-prizes"> "Rasperry Pi 3" </h3>
+        <p className="segment-prizes">
+          "It's perfect for running highly-optimized Reason code and interacting with hardward! "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <h3 className="segment-prizes"> "Rasperry Pi Zero" </h3>
+        <p className="segment-prizes">
+          "It's small but it packs a punch, and Reason can run here too! "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <h3 className="segment-prizes"> "Free hosting" </h3>
+        <p className="segment-prizes">
+          "12 months hosting for your project on any major hosting provider. "
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+      </article>
+    </section>
   </div>;
 
 let segment_about () =>
