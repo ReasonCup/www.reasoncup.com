@@ -44,7 +44,9 @@ let prolog () =>
           <a href="https://facebook.github.io/reason/"> "Reasonml" </a>
           " programmers. Teams of up to four build web apps that are useful, fun, or just quirky. Entries will be reviewed by developers in the Reason community with prizes given away at the end!"
         </p>
-        <button> "Sign up" </button>
+        <a href="https://docs.google.com/forms/d/1olHLxw3rkzAMkr6CEbKObTQfLNiTrpIQyLd4l9MBs40">
+          <button> "Sign up" </button>
+        </a>
       </article>
     </section>
     <div className="continue"> "v" </div>
@@ -55,9 +57,11 @@ let epilog () =>
     <div className="continue"> "v" </div>
     <section className="content">
       <article>
-        <h1> "Finally, the Reason for Ocaml." </h1>
+        <h1> "Reason will prevail!" </h1>
         <p> "Let's use Reason to build something great" </p>
-        <button> "Join us for ReasonCup 2016" </button>
+        <a href="https://docs.google.com/forms/d/1olHLxw3rkzAMkr6CEbKObTQfLNiTrpIQyLd4l9MBs40">
+          <button> "Join us for ReasonCup 2016" </button>
+        </a>
       </article>
     </section>
     (nav ())
@@ -105,38 +109,9 @@ let segment_judges () =>
       <article>
         <h1> "Judges" </h1>
         <p className="segment-judges">
-          "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
+          "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed. We'll be announcing the full panel of judges shortly."
         </p>
         <hr />
-        <img className="judge-img" src="http://placehold.it/128x128" />
-        <h3> "Lorem Ipsum" </h3>
-        <p className="segment-judges">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
-        </p>
-        <hr />
-        <img className="judge-img" src="http://placehold.it/128x128" />
-        <h3> "Lorem Ipsum" </h3>
-        <p className="segment-judges">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
-        </p>
-        <hr />
-        <img className="judge-img" src="http://placehold.it/128x128" />
-        <h3> "Lorem Ipsum" </h3>
-        <p className="segment-judges">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
-        </p>
-        <hr />
-        <img className="judge-img" src="http://placehold.it/128x128" />
-        <h3> "Lorem Ipsum" </h3>
-        <p className="segment-judges">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
-        </p>
-        <hr />
-        <img className="judge-img" src="http://placehold.it/128x128" />
-        <h3> "Lorem Ipsum" </h3>
-        <p className="segment-judges">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
-        </p>
       </article>
     </section>
   </div>;
