@@ -303,7 +303,31 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-judges" },
-	          "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed. We'll be announcing the full panel of judges shortly."
+	          "We've made sure to bring in some great judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed. We'll be announcing the full panel of judges shortly."
+	        ),
+	        React.createElement("hr", null),
+	        React.createElement("img", { className: "judge-img", src: "https://pbs.twimg.com/profile_images/690179176351924224/SBRuzEWj_400x400.jpg" }),
+	        React.createElement(
+	          "h3",
+	          null,
+	          "Anil Madhavapeddy"
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "segment-judges" },
+	          "Engineering at Docker, faculty at Cambridge Computer Lab, fellow Pembroke College, author Real World OCaml, unikernel hacker, and just a generally swell fellow!"
+	        ),
+	        React.createElement("hr", null),
+	        React.createElement("img", { className: "judge-img", src: "http://placehold.it/128x128" }),
+	        React.createElement(
+	          "h3",
+	          null,
+	          "To be announced"
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "segment-judges" },
+	          "We'll be announcing the rest of the judges shortly, so stay tuned!"
 	        ),
 	        React.createElement("hr", null)
 	      )
@@ -335,7 +359,7 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-prizes" },
-	          "On of the top fashion item of the season. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget."
+	          "On of the top fashion item of the season. You're gonna look great, believe me."
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement(
@@ -346,7 +370,7 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-prizes" },
-	          "It's perfect for running highly-optimized Reason code and interacting with hardward! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget."
+	          "It's perfect for running highly-optimized Reason code and interacting with hardware!"
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement(
@@ -357,7 +381,7 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-prizes" },
-	          "It's small but it packs a punch, and Reason can run here too! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget."
+	          "It's small but it packs a punch, and Reason can run here too!"
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement(
@@ -368,7 +392,7 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-prizes" },
-	          "12 months hosting for your project on any major hosting provider. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget."
+	          "12 months hosting for your project on any major hosting provider."
 	        )
 	      )
 	    )
