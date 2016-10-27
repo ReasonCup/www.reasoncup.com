@@ -310,12 +310,32 @@
 	        React.createElement(
 	          "h3",
 	          null,
-	          "Anil Madhavapeddy"
+	          React.createElement(
+	            "a",
+	            { href: "https://twitter.com/avsm" },
+	            "Anil Madhavapeddy"
+	          )
 	        ),
 	        React.createElement(
 	          "p",
 	          { className: "segment-judges" },
 	          "Engineering at Docker, faculty at Cambridge Computer Lab, fellow Pembroke College, author Real World OCaml, unikernel hacker, and just a generally swell fellow!"
+	        ),
+	        React.createElement("hr", null),
+	        React.createElement("img", { className: "judge-img", src: "https://pbs.twimg.com/profile_images/557953374419562496/ofvO23ag_400x400.jpeg" }),
+	        React.createElement(
+	          "h3",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "https://twitter.com/kc_srk" },
+	            "KC Sivaramakrishnan"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "segment-judges" },
+	          "KC is the uniquely capable and thoughtful force behind so many of the most exciting features coming to the Reason language, including Algebraic effects and multicore"
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement("img", { className: "judge-img", src: "http://placehold.it/128x128" }),
@@ -415,6 +435,11 @@
 	          { href: "https://github.com/ReasonCup" },
 	          "ReasonCup Team"
 	        )
+	      ),
+	      React.createElement(
+	        "p",
+	        { className: "segment-about" },
+	        "Reason mug - start your day with a healthy dose of Reason with this styl"
 	      ),
 	      React.createElement(
 	        "p",
