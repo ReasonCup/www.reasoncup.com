@@ -25,8 +25,7 @@ let module ReactRe = React;
 let nav () =>
   <div className="nav">
     <div className="nav-items content">
-      <div className="nav-item"> "ReasonCup 2016" </div>
-      <div className="nav-item"> "About" </div>
+      <div className="nav-item"> "ReasonCup" </div>
       <div className="nav-item"> "Rules" </div>
       <div className="nav-item"> "Judges" </div>
       <div className="nav-item"> "Prizes" </div>
@@ -39,13 +38,13 @@ let prolog () =>
     (nav ())
     <section className="content">
       <article>
-        <h1> "Reasoners: Join us for ReasonCup!" </h1>
+        <h1> "Come join us for ReasonCup 2016!" </h1>
         <p>
           "ReasonCup is a free distributed 48-hour programming event for "
           <a href="https://facebook.github.io/reason/"> "Reasonml" </a>
           " programmers. Teams of up to four build web apps that are useful, fun, or just quirky. Entries will be reviewed by developers in the Reason community with prizes given away at the end!"
         </p>
-        <button> "test" </button>
+        <button> "Sign up" </button>
       </article>
     </section>
     <div className="continue"> "v" </div>
@@ -66,29 +65,32 @@ let epilog () =>
 
 let segment_rules () =>
   <div className="segment">
-    <div className="segment-rules">
-      <p className="segment-rules"> "Event Rules" </p>
-      <p className="segment-rules">
-        "ReasonCup is about creating fun and useful projects and pushing the tooling in Reasonml to grow. We're pretty relaxed about what that actually looks as long as you follow some general guidelines:"
-      </p>
-      <ul>
-        <li className="segment-rules">
+    <section className="content">
+      <article>
+        <h1 className="segment-rules"> "Event Rules" </h1>
+        <p className="segment-rules">
+          "ReasonCup is about creating fun and useful projects and pushing the tooling in Reasonml to grow. We're pretty relaxed about what that actually looks as long as you follow some general guidelines:"
+        </p>
+        <h3> "Use Reason" </h3>
+        <p className="segment-rules">
           "Your apps/entries should be built primarily using Reason (though you may also use the OCaml syntax if you would like). Where it runs doesn't matter though, so we encourage you to use "
-          <a href=""> "bucklescript" </a>
+          <a href=""> "Bucklescript" </a>
           " if you'd like to target the browser or node.js runtimes"
-        </li>
-        <li className="segment-rules">
+        </p>
+        <h3> "Dependencies" </h3>
+        <p className="segment-rules">
           "While the bulk of your code should be in Reason, you can use any non-Reason dependency (C/JS/Unix/etc.) as necessary."
-        </li>
-        <li className="segment-rules">
-          "Entries should run on one of the supported platforms: ARM/Node.js/Browser/Unix/Xen/iOS/rasperry pi/etc.*"
-        </li>
-      </ul>
-      <p>
-        "* Your entry may be a web app, a library, some utility, or anything you think would be fun."
-        "It's probably best if your entry is somehow usable via the browser, as that's the easiest for judges and the general public to evaluate entries, and avoids complicated setups that may not work when trying to run an entry locally.\n\nIf your entry is not a website however, then be sure to publish it to NPM where we can examine it easily locally."
-      </p>
-    </div>
+        </p>
+        <h3> "Supported platforms" </h3>
+        <p className="segment-rules">
+          "Entries should run on one of these platforms: ARM, Node.js, Web, Unix, Xen, iOS, Rasperry Pi. Your entry may also be a library, some utility, or anything you think would be fun."
+        </p>
+        <h3> "Accessibility" </h3>
+        <p>
+          "It's probably best if your entry is somehow usable via the browser, as that's the easiest for judges and the general public to evaluate entries, and avoids complicated setups that may not work when trying to run an entry locally.\n\nIf your entry is not a website however, then be sure to publish it to NPM where we can examine it easily locally."
+        </p>
+      </article>
+    </section>
   </div>;
 
 let segment_judges () =>
