@@ -54,11 +54,11 @@ let epilog () =>
   <div className="jumbotron">
     <div className="continue"> "v" </div>
     <section className="content">
-      <div className="hero-item">
+      <article>
         <h1> "Finally, the Reason for Ocaml." </h1>
         <p> "Let's use Reason to build something great" </p>
         <button> "Join us for ReasonCup 2016" </button>
-      </div>
+      </article>
     </section>
     (nav ())
   </div>;
