@@ -101,27 +101,44 @@ let segment_rules () =>
 
 let segment_judges () =>
   <div className="segment">
-    <div className="segment-judges">
-      <p className="segment-judges">
-        "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
-      </p>
-      <p className="segment-judges"> "Me" </p>
-      <p className="segment-judges"> "You" </p>
-      <p className="segment-judges"> "Her" </p>
-      <p className="segment-judges"> "Him" </p>
-      <p className="segment-judges"> "It" </p>
-      <p className="segment-judges"> "Us" </p>
-      <p className="segment-judges"> "Vous" </p>
-      <p className="segment-judges"> "They" </p>
-      <br />
-      <p className="segment-judges"> "Criteria" </p>
-      <ul>
-        <li className="segment-judges">
-          "Here are some specific judging criteria so you know what to build towards:"
-        </li>
-        <li className="segment-judges"> "Neat stuff." </li>
-      </ul>
-    </div>
+    <section className="content">
+      <article>
+        <h1> "Judges" </h1>
+        <p className="segment-judges">
+          "We've made sure to bring in some great segment-judges with a deep understanding of the Reason ecosystem and tooling, as well as an understanding of how stuff is actually built and consumed."
+        </p>
+        <hr />
+        <img className="judge-img" src="http://placehold.it/128x128" />
+        <h3> "Lorem Ipsum" </h3>
+        <p className="segment-judges">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <img className="judge-img" src="http://placehold.it/128x128" />
+        <h3> "Lorem Ipsum" </h3>
+        <p className="segment-judges">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <img className="judge-img" src="http://placehold.it/128x128" />
+        <h3> "Lorem Ipsum" </h3>
+        <p className="segment-judges">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <img className="judge-img" src="http://placehold.it/128x128" />
+        <h3> "Lorem Ipsum" </h3>
+        <p className="segment-judges">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+        <hr />
+        <img className="judge-img" src="http://placehold.it/128x128" />
+        <h3> "Lorem Ipsum" </h3>
+        <p className="segment-judges">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend consectetur leo, in fringilla ex porttitor eget. "
+        </p>
+      </article>
+    </section>
   </div>;
 
 let segment_prizes () =>
