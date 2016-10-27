@@ -151,6 +151,11 @@ let segment_prizes () =>
           "On of the top fashion item of the season. You're gonna look great, believe me."
         </p>
         <hr />
+        <h3 className="segment-prizes"> "Reason Mug" </h3>
+        <p className="segment-prizes">
+          "Start your day with a healthy dose of Reason with this stylish Reason mug"
+        </p>
+        <hr />
         <h3 className="segment-prizes"> "Rasperry Pi 3" </h3>
         <p className="segment-prizes">
           "It's perfect for running highly-optimized Reason code and interacting with hardware!"
@@ -173,12 +178,10 @@ let segment_about () =>
   <div className="segment">
     <div className="segment-about">
       <p className="segment-about">
-        "ReasonCup is brought to you by your fellow reasoners, the "
+        "ReasonCup is brought to you by your fellow Reasoners, the "
         <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
       </p>
-      <p className="segment-about">
-        "Reason mug - start your day with a healthy dose of Reason with this styl"
-      </p>
+      <p className="segment-about" />
       <p className="segment-about">
         "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
       </p>
