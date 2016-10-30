@@ -358,7 +358,7 @@
 	        React.createElement(
 	          "p",
 	          { className: "segment-judges" },
-	          "Sacha is the auther of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained."
+	          "Sacha is the author of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained."
 	        ),
 	        React.createElement("hr", null),
 	        React.createElement("img", { className: "judge-img", src: "http://placehold.it/128x128" }),
