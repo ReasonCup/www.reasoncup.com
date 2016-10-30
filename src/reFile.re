@@ -140,7 +140,7 @@ let segment_judges () =>
         <img className="judge-img" src="/resources/public/img/judges/sgreif.png" />
         <h3> <a href="https://twitter.com/SachaGreif"> "Sache Greif" </a> </h3>
         <p className="segment-judges">
-          "Sacha is the auther of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained. "
+          "Sacha is the author of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained. "
         </p>
         <hr />
         <img className="judge-img" src="http://placehold.it/128x128" />
