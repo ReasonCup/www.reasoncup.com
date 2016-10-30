@@ -12,10 +12,6 @@ external setInterval : (unit => unit) => int => intervalId = "window.setInterval
 
 external clearInterval : intervalId => unit = "window.clearInterval" [@@bs.val];
 
-let module Console = {
-  external log : 'anything => unit = "console.log" [@@bs.val];
-};
-
 type props = Js.t < children : Js.null_undefined React.reactElement >;
 
 external props : unit => 'reactJsProps = "" [@@bs.obj];
