@@ -127,10 +127,19 @@
 	      React.createElement(
 	        "article",
 	        null,
+	        React.createElement("img", { src: "/resources/public/img/ReasonCup2016.png", alt: "Come join us for ReasonCup 2016!" }),
 	        React.createElement(
-	          "h1",
+	          "cite",
 	          null,
-	          "Come join us for ReasonCup 2016!"
+	          React.createElement(
+	            "small",
+	            null,
+	            React.createElement(
+	              "a",
+	              { href: "https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128" },
+	              "Cup icon by Sergei Kokota"
+	            )
+	          )
 	        ),
 	        React.createElement(
 	          "p",
