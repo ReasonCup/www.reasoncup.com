@@ -95,31 +95,47 @@
 	      React.createElement(
 	        "div",
 	        { className: "nav-item" },
-	        "Rules"
+	        React.createElement(
+	          "a",
+	          { href: "#rules" },
+	          "Rules"
+	        )
 	      ),
 	      React.createElement(
 	        "div",
 	        { className: "nav-item" },
-	        "Judges"
+	        React.createElement(
+	          "a",
+	          { href: "#judges" },
+	          "Judges"
+	        )
 	      ),
 	      React.createElement(
 	        "div",
 	        { className: "nav-item" },
-	        "Prizes"
+	        React.createElement(
+	          "a",
+	          { href: "#prizes" },
+	          "Prizes"
+	        )
 	      ),
 	      React.createElement(
 	        "div",
 	        { className: "nav-item" },
-	        "Sign up"
+	        React.createElement(
+	          "a",
+	          { href: "https://docs.google.com/forms/d/1olHLxw3rkzAMkr6CEbKObTQfLNiTrpIQyLd4l9MBs40" },
+	          "Sign up"
+	        )
 	      )
 	    )
 	  );
 	}
 
-	function prolog() {
+	function prologue() {
 	  return React.createElement(
 	    "div",
-	    { className: "jumbotron" },
+	    { id: "prologue", className: "jumbotron" },
 	    nav( /* () */0),
 	    React.createElement(
 	      "section",
@@ -128,19 +144,6 @@
 	        "article",
 	        null,
 	        React.createElement("img", { src: "/resources/public/img/ReasonCup2016.png", alt: "Come join us for ReasonCup 2016!" }),
-	        React.createElement(
-	          "cite",
-	          null,
-	          React.createElement(
-	            "small",
-	            null,
-	            React.createElement(
-	              "a",
-	              { href: "https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128" },
-	              "Cup icon by Sergei Kokota"
-	            )
-	          )
-	        ),
 	        React.createElement(
 	          "p",
 	          null,
@@ -171,10 +174,10 @@
 	  );
 	}
 
-	function epilog() {
+	function epilogue() {
 	  return React.createElement(
 	    "div",
-	    { className: "jumbotron" },
+	    { id: "epilogue", className: "jumbotron" },
 	    React.createElement(
 	      "div",
 	      { className: "continue" },
@@ -204,6 +207,51 @@
 	            null,
 	            " Join us for ReasonCup 2016 "
 	          )
+	        ),
+	        React.createElement(
+	          "ul",
+	          null,
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "small",
+	              null,
+	              "Site design by ",
+	              React.createElement(
+	                "a",
+	                { href: "https://twitter.com/dannykingme" },
+	                "Danny King"
+	              )
+	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "small",
+	              null,
+	              "Logo by ",
+	              React.createElement(
+	                "a",
+	                { href: "https://twitter.com/SachaGreif" },
+	                "Sacha Greif"
+	              )
+	            )
+	          ),
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "small",
+	              null,
+	              React.createElement(
+	                "a",
+	                { href: "https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128" },
+	                "Cup icon by Sergei Kokota"
+	              )
+	            )
+	          )
 	        )
 	      )
 	    ),
@@ -214,7 +262,7 @@
 	function segment_rules() {
 	  return React.createElement(
 	    "div",
-	    { className: "segment" },
+	    { id: "rules", className: "segment" },
 	    React.createElement(
 	      "section",
 	      { className: "content" },
@@ -295,7 +343,7 @@
 	function segment_judges() {
 	  return React.createElement(
 	    "div",
-	    { className: "segment" },
+	    { id: "judges", className: "segment" },
 	    React.createElement(
 	      "section",
 	      { className: "content" },
@@ -352,7 +400,7 @@
 	          React.createElement(
 	            "a",
 	            { href: "https://twitter.com/SachaGreif" },
-	            "Sache Greif"
+	            "Sacha Greif"
 	          )
 	        ),
 	        React.createElement(
@@ -381,7 +429,7 @@
 	function segment_prizes() {
 	  return React.createElement(
 	    "div",
-	    { className: "segment" },
+	    { id: "prizes", className: "segment" },
 	    React.createElement(
 	      "section",
 	      { className: "content" },
@@ -456,51 +504,40 @@
 	function segment_about() {
 	  return React.createElement(
 	    "div",
-	    { className: "segment" },
+	    { id: "#about", className: "segment" },
 	    React.createElement(
-	      "div",
-	      { className: "segment-about" },
+	      "section",
+	      { className: "segment-about content" },
 	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "ReasonCup is brought to you by your fellow Reasoners, the ",
+	        "article",
+	        null,
 	        React.createElement(
-	          "a",
-	          { href: "https://github.com/ReasonCup" },
-	          "ReasonCup Team"
+	          "h1",
+	          { className: "segment-rules" },
+	          "About ReasonCup"
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "segment-about" },
+	          "ReasonCup is brought to you by your fellow Reasoners on the ",
+	          React.createElement(
+	            "a",
+	            { href: "https://github.com/ReasonCup" },
+	            "ReasonCup Team"
+	          ),
+	          ". Site design by ",
+	          React.createElement(
+	            "a",
+	            { href: "https://twitter.com/dannykingme" },
+	            "Danny King"
+	          ),
+	          ", logo by ",
+	          React.createElement(
+	            "a",
+	            { href: "https://twitter.com/SachaGreif" },
+	            "Sacha Greif"
+	          )
 	        )
-	      ),
-	      React.createElement("p", { className: "segment-about" }),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
-	      ),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
-	      ),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "12 months hosting for your project on major hosting providers"
-	      ),
-	      React.createElement("br", null),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "Sponsors:"
-	      ),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "Me"
-	      ),
-	      React.createElement(
-	        "p",
-	        { className: "segment-about" },
-	        "You"
 	      )
 	    )
 	  );
@@ -512,11 +549,11 @@
 	    return React.createElement(
 	      "div",
 	      { className: "page" },
-	      prolog( /* () */0),
+	      prologue( /* () */0),
 	      segment_rules( /* () */0),
 	      segment_judges( /* () */0),
 	      segment_prizes( /* () */0),
-	      epilog( /* () */0)
+	      epilogue( /* () */0)
 	    );
 	  }
 	});
@@ -525,8 +562,8 @@
 
 	exports.ReactRe = ReactRe;
 	exports.nav = nav;
-	exports.prolog = prolog;
-	exports.epilog = epilog;
+	exports.prologue = prologue;
+	exports.epilogue = epilogue;
 	exports.segment_rules = segment_rules;
 	exports.segment_judges = segment_judges;
 	exports.segment_prizes = segment_prizes;
