@@ -34,7 +34,18 @@ let prolog () =>
     (nav ())
     <section className="content">
       <article>
-        <h1> "Come join us for ReasonCup 2016!" </h1>
+        <img
+          src="/resources/public/img/ReasonCup2016.png"
+          alt="Come join us for ReasonCup 2016!"
+        />
+        <cite>
+          <small>
+            <a
+              href="https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128">
+              "Cup icon by Sergei Kokota"
+            </a>
+          </small>
+        </cite>
         <p>
           "ReasonCup is a free distributed 48-hour programming event for "
           <a href="https://facebook.github.io/reason/"> "Reasonml" </a>
