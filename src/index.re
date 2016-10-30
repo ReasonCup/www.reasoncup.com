@@ -6,12 +6,6 @@
 let module ReactRe = React;
 
 /* EXPERIMENT thin wrapper around createClass, not the ML way of life */
-type intervalId;
-
-external setInterval : (unit => unit) => int => intervalId = "window.setInterval" [@@bs.val];
-
-external clearInterval : intervalId => unit = "window.clearInterval" [@@bs.val];
-
 type props = Js.t < children : Js.null_undefined React.reactElement >;
 
 external props : unit => 'reactJsProps = "" [@@bs.obj];
@@ -236,3 +230,5 @@ let comp = React.createClass (
   }
   [@bs]
 );
+
+Console.log "Check it out, Autobuild! Loaded reFile!";
