@@ -22,15 +22,19 @@ let nav () =>
   <div className="nav">
     <div className="nav-items content">
       <div className="nav-item"> "ReasonCup" </div>
-      <div className="nav-item"> "Rules" </div>
-      <div className="nav-item"> "Judges" </div>
-      <div className="nav-item"> "Prizes" </div>
-      <div className="nav-item"> "Sign up" </div>
+      <div className="nav-item"> <a href="#rules"> "Rules" </a> </div>
+      <div className="nav-item"> <a href="#judges"> "Judges" </a> </div>
+      <div className="nav-item"> <a href="#prizes"> "Prizes" </a> </div>
+      <div className="nav-item">
+        <a href="https://docs.google.com/forms/d/1olHLxw3rkzAMkr6CEbKObTQfLNiTrpIQyLd4l9MBs40">
+          "Sign up"
+        </a>
+      </div>
     </div>
   </div>;
 
-let prolog () =>
-  <div className="jumbotron">
+let prologue () =>
+  <div id="prologue" className="jumbotron">
     (nav ())
     <section className="content">
       <article>
@@ -38,14 +42,6 @@ let prolog () =>
           src="/resources/public/img/ReasonCup2016.png"
           alt="Come join us for ReasonCup 2016!"
         />
-        <cite>
-          <small>
-            <a
-              href="https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128">
-              "Cup icon by Sergei Kokota"
-            </a>
-          </small>
-        </cite>
         <p>
           "ReasonCup is a free distributed 48-hour programming event for "
           <a href="https://facebook.github.io/reason/"> "Reasonml" </a>
@@ -59,8 +55,8 @@ let prolog () =>
     <div className="continue"> "v" </div>
   </div>;
 
-let epilog () =>
-  <div className="jumbotron">
+let epilogue () =>
+  <div id="epilogue" className="jumbotron">
     <div className="continue"> "v" </div>
     <section className="content">
       <article>
@@ -69,13 +65,35 @@ let epilog () =>
         <a href="https://docs.google.com/forms/d/1olHLxw3rkzAMkr6CEbKObTQfLNiTrpIQyLd4l9MBs40">
           <button> "Join us for ReasonCup 2016" </button>
         </a>
+        <ul>
+          <li>
+            <small>
+              "Site design by "
+              <a href="https://twitter.com/dannykingme"> "Danny King" </a>
+            </small>
+          </li>
+          <li>
+            <small>
+              "Logo by "
+              <a href="https://twitter.com/SachaGreif"> "Sacha Greif" </a>
+            </small>
+          </li>
+          <li>
+            <small>
+              <a
+                href="https://www.iconfinder.com/icons/968988/achievement_cup_prize_trophy_victory_winner_icon#size=128">
+                "Cup icon by Sergei Kokota"
+              </a>
+            </small>
+          </li>
+        </ul>
       </article>
     </section>
     (nav ())
   </div>;
 
 let segment_rules () =>
-  <div className="segment">
+  <div id="rules" className="segment">
     <section className="content">
       <article>
         <h1 className="segment-rules"> "Event Rules" </h1>
@@ -111,7 +129,7 @@ let segment_rules () =>
   </div>;
 
 let segment_judges () =>
-  <div className="segment">
+  <div id="judges" className="segment">
     <section className="content">
       <article>
         <h1> "Judges" </h1>
@@ -138,7 +156,7 @@ let segment_judges () =>
         </p>
         <hr />
         <img className="judge-img" src="/resources/public/img/judges/sgreif.png" />
-        <h3> <a href="https://twitter.com/SachaGreif"> "Sache Greif" </a> </h3>
+        <h3> <a href="https://twitter.com/SachaGreif"> "Sacha Greif" </a> </h3>
         <p className="segment-judges">
           "Sacha is the author of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained. "
         </p>
@@ -154,7 +172,7 @@ let segment_judges () =>
   </div>;
 
 let segment_prizes () =>
-  <div className="segment">
+  <div id="prizes" className="segment">
     <section className="content">
       <article>
         <h1 className="segment-prizes"> "Prizes" </h1>
@@ -188,27 +206,20 @@ let segment_prizes () =>
   </div>;
 
 let segment_about () =>
-  <div className="segment">
-    <div className="segment-about">
-      <p className="segment-about">
-        "ReasonCup is brought to you by your fellow Reasoners, the "
-        <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
-      </p>
-      <p className="segment-about" />
-      <p className="segment-about">
-        "Rasperry pi 3 kit - perfect for running highly-optimized Reason code and interacting with hardward!"
-      </p>
-      <p className="segment-about">
-        "Rasperry pi zero - It's small, but packs a punch - and year, Reason can run even here!"
-      </p>
-      <p className="segment-about">
-        "12 months hosting for your project on major hosting providers"
-      </p>
-      <br />
-      <p className="segment-about"> "Sponsors:" </p>
-      <p className="segment-about"> "Me" </p>
-      <p className="segment-about"> "You" </p>
-    </div>
+  <div id="#about" className="segment">
+    <section className="segment-about content">
+      <article>
+        <h1 className="segment-rules"> "About ReasonCup" </h1>
+        <p className="segment-about">
+          "ReasonCup is brought to you by your fellow Reasoners on the "
+          <a href="https://github.com/ReasonCup"> "ReasonCup Team" </a>
+          ". Site design by "
+          <a href="https://twitter.com/dannykingme"> "Danny King" </a>
+          ", logo by "
+          <a href="https://twitter.com/SachaGreif"> "Sacha Greif" </a>
+        </p>
+      </article>
+    </section>
   </div>;
 
 let comp = React.createClass (
@@ -216,11 +227,11 @@ let comp = React.createClass (
     val displayName = "ReasonCup";
     method render () =>
       <div className="page">
-        (prolog ())
+        (prologue ())
         (segment_rules ())
         (segment_judges ())
         (segment_prizes ())
-        (epilog ())
+        (epilogue ())
       </div>
   }
   [@bs]
