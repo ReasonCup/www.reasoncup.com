@@ -80,8 +80,6 @@
 
 	var React = __webpack_require__(2);
 
-	var Console = /* module */[];
-
 	function nav() {
 	  return React.createElement(
 	    "div",
@@ -338,6 +336,22 @@
 	          "KC is the uniquely capable and thoughtful force behind so many of the most exciting features coming to the Reason language, including Algebraic effects and multicore"
 	        ),
 	        React.createElement("hr", null),
+	        React.createElement("img", { className: "judge-img", src: "/resources/public/img/judges/sgreif.png" }),
+	        React.createElement(
+	          "h3",
+	          null,
+	          React.createElement(
+	            "a",
+	            { href: "https://twitter.com/SachaGreif" },
+	            "Sache Greif"
+	          )
+	        ),
+	        React.createElement(
+	          "p",
+	          { className: "segment-judges" },
+	          "Sacha is the auther of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained."
+	        ),
+	        React.createElement("hr", null),
 	        React.createElement("img", { className: "judge-img", src: "http://placehold.it/128x128" }),
 	        React.createElement(
 	          "h3",
@@ -484,12 +498,7 @@
 	}
 
 	var comp = React.createClass({
-	  displayName: "ReFile",
-	  getInitialState: function getInitialState() {
-	    return {
-	      name: "HelloWorld"
-	    };
-	  },
+	  displayName: "ReasonCup",
 	  render: function render() {
 	    return React.createElement(
 	      "div",
@@ -505,7 +514,6 @@
 
 	var ReactRe = 0;
 
-	exports.Console = Console;
 	exports.ReactRe = ReactRe;
 	exports.nav = nav;
 	exports.prolog = prolog;
