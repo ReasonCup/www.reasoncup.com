@@ -2,6 +2,9 @@
  * vim: set ft=rust:
  * vim: set ft=reason:
  */
+/* JSX compiles to ReactRe, so alias module name */
+let module ReactRe = React;
+
 /* EXPERIMENT thin wrapper around createClass, not the ML way of life */
 type intervalId;
 
@@ -9,18 +12,11 @@ external setInterval : (unit => unit) => int => intervalId = "window.setInterval
 
 external clearInterval : intervalId => unit = "window.clearInterval" [@@bs.val];
 
-let module Console = {
-  external log : 'anything => unit = "console.log" [@@bs.val];
-};
-
 type props = Js.t < children : Js.null_undefined React.reactElement >;
 
 external props : unit => 'reactJsProps = "" [@@bs.obj];
 
 type state = Js.t < name : string >;
-
-/* WTF is this shit */
-let module ReactRe = React;
 
 let nav () =>
   <div className="nav">
@@ -130,6 +126,12 @@ let segment_judges () =>
           "KC is the uniquely capable and thoughtful force behind so many of the most exciting features coming to the Reason language, including Algebraic effects and multicore"
         </p>
         <hr />
+        <img className="judge-img" src="/resources/public/img/judges/sgreif.png" />
+        <h3> <a href="https://twitter.com/SachaGreif"> "Sache Greif" </a> </h3>
+        <p className="segment-judges">
+          "Sacha is the auther of DiscoverMeteor and Telescope. He's also a world class visual and product designer, so he's intimately familiar with not only what makes a great product, but also how it's built and explained. "
+        </p>
+        <hr />
         <img className="judge-img" src="http://placehold.it/128x128" />
         <h3> "To be announced" </h3>
         <p className="segment-judges">
@@ -200,8 +202,7 @@ let segment_about () =>
 
 let comp = React.createClass (
   {
-    val displayName = "ReFile";
-    method getInitialState () :state => {"name": "HelloWorld"};
+    val displayName = "ReasonCup";
     method render () =>
       <div className="page">
         (prolog ())
@@ -213,89 +214,3 @@ let comp = React.createClass (
   }
   [@bs]
 );
-/* type props = Js.t < name : string, children : Js.null_undefined React.reactElement >;
-
-   /* unused, this file only used by js */
-   external props : name::string => unit => 'reactJsProps = "" [@@bs.obj];
-
-   type state = Js.t < count : int, name : float >;
-
-   let module PropTypes = React.PropTypes;
-
-   let foo = Js.Null_undefined.empty;
-
-   /* let module ReactRe = React; */
-
-   let comp = React.createClass (
-     {
-       val displayName = "ReFile";
-       val propTypes = {
-         "name": PropTypes.isRequired PropTypes.string,
-         "asd": PropTypes.oneOfType [|PropTypes.string|],
-         "asd2": PropTypes.oneOf [|"foo"|]
-       };
-       val mutable id = None;
-       method getInitialState () :state => {"count": 0, "name": 1.};
-       method componentDidMount () => {
-         Console.log "mounted!";
-         this##id#=(Some (setInterval (fun () => print_endline "asd") 1000))
-       };
-       method componentWillUnmount () =>
-         switch this##id {
-         | None => ()
-         | Some id => clearInterval id
-         };
-       method handleClick _ =>
-         React.setState this (fun (state: state) => {"count": state##count + 1});
-       method handleClick2 _ => {
-         let state: state = React.getState this;
-         React.setState this {"count": state##count + 22}
-       };
-       method render () => {
-         let state: state = React.getState this;
-         let props: props = React.getProps this;
-         <div onMouseDown=this##handleClick>
-           <div> state##count </div>
-           <JsFile2Re name="clickmetoseemagic"> state##count </JsFile2Re>
-           <ReactMotion.Motion
-             style={
-                     "x": ReactMotion.spring (
-                       if (state##count mod 2 == 0) {
-                         400
-                       } else {
-                         0
-                       }
-                     )
-                   }>
-             (
-               fun style =>
-                 <div className="demo0">
-                   <div
-                     className="demo0-block"
-                     style={
-                             "WebkitTransform": "translate3d(" ^ string_of_float style##x ^ "px, 0, 0)",
-                             "transform": "translate3d(" ^ string_of_float style##x ^ "px, 0, 0)"
-                           }
-                   />
-                 </div>
-             )
-           </ReactMotion.Motion>
-           <ReFile2 inner=1 something=(Js.Null_undefined.return "duckyou")>
-             state##name
-             state##count
-             props##children
-           </ReFile2>
-           <ReFile2 inner=1 something=(Js.Null_undefined.return "asd")>
-             state##name
-             state##count
-             props##children
-           </ReFile2>
-           <ReFile2 inner=1> state##name state##count </ReFile2>
-           <ReFile2 inner=1 something=foo />
-           <div> props##name </div>
-           [|<div key=1> (props##name ^ "hello") </div>, <div key=2> props##name </div>|]
-         </div>
-       }
-     }
-     [@bs]
-   ); */
