@@ -196,8 +196,7 @@ let segment_about () =>
 
 let comp = React.createClass (
   {
-    val displayName = "ReFile";
-    method getInitialState () :state => {"name": "HelloWorld"};
+    val displayName = "ReasonCup";
     method render () =>
       <div className="page">
         (prolog ())
