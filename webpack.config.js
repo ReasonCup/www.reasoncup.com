@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/jsFile1.js',
+  entry: './src/main.js',
   output: {
-    filename: './_build/all.js',
+    filename: './resources/public/js/all.js',
   },
   module: {
     loaders: [
