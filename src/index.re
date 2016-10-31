@@ -5,7 +5,7 @@
 /* JSX compiles to ReactRe, so alias module name */
 let module ReactRe = React;
 
-/* EXPERIMENT thin wrapper around createClass, not the ML way of life */
+/* Experimental thin wrapper around createClass, not the ML way of life */
 type props = Js.t < children : Js.null_undefined React.reactElement >;
 
 external props : unit => 'reactJsProps = "" [@@bs.obj];
