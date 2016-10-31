@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-rm -rf _build
-mkdir _build
-rm -rf src/**/*.cm*
-
 set -e
 
 ./node_modules/ocaml/bin/ocamldep -ppx ./node_modules/reason/reactjs_jsx_ppx.native -ppx ./node_modules/bs-platform/bin/bsppx.exe -pp ./node_modules/reason/refmt_impl.native -sort -ml-synonym .re src/**/*.re \
