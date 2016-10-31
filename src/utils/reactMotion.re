@@ -1,8 +1,10 @@
 /*
- * vim: set ft=rust:
- * vim: set ft=reason:
+  * vim: set ft=rust:
+  * vim: set ft=reason:
+
+  Note that this file *must* be named reactMotion.re or
+  ReactMotion.re so that the Reason module has the correct captialization
  */
- 
 external spring : 'a => 'a = "spring" [@@bs.module "react-motion"];
 
 let module Motion = {
